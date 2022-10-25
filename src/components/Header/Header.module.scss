@@ -1,4 +1,147 @@
+.header {
+    padding: 22px 0 7px;
+}
+
 .wrapper {
-    color: red;
-    background: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 20px;
+    max-height: 20px;
+    margin-bottom: 4px;
+    position: relative;
+    z-index: 20;
+}
+
+.menu {
+
+    li {
+        display: inline-block;
+        margin-right: 45px;
+    }
+
+    a {
+        font-size: 18px;
+        line-height: 21px;
+        color: #F3F3F3;
+
+        &:hover {
+            color: #7B93FF;
+        }
+    }
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 2px;
+    background: linear-gradient(140.6deg, #FFFFFF -27.18%, #DEDEDE 126.06%);
+    box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.4);
+    border-radius: 10px;
+    padding: 19px 35px 17px 43px;
+
+    &:hover {
+        background: linear-gradient(140.6deg, #3E6FF9 -27.18%, #3E53F8 126.06%);
+
+        span {
+            color: #FFF;
+        }
+
+        svg {
+            fill: #FFF;
+        }
+    }
+
+    span {
+        font-family: 'Mazzard M', sans-serif;
+        color: #000000;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        position: relative;
+        top: -2px;
+    }
+    
+    svg {
+        fill: #000;
+        margin-left: 9px;
+    }
+}
+
+.burger {
+    display: none;
+}
+
+@media(max-width:1024px) {
+
+    .menu {
+
+        li {
+            margin-right: 30px;
+        }
+    }
+
+    .btn {
+        padding: 15px 30px;
+
+        span {
+            margin-right: -2px;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+
+    .header {
+        padding: 37px 0 0;
+    }
+
+    .burger {
+        display: block;
+        width: 32px;
+        height: 8px;
+        cursor: pointer;
+        border: 1px solid #FFF;
+        border-width: 1px 0px 1px 0px;
+        position: relative;
+        z-index: 20;
+
+        &:hover {
+            border-color: #7B93FF;
+        }
+    }
+
+    .content {
+        position: fixed;
+        background: #000;
+        display: block;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 100px 28px 0px;
+    }
+
+    .menu {
+        margin-bottom: 30px;
+
+        li {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        & a {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
 }
