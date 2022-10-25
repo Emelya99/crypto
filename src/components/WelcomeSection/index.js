@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './WelcomeSection.module.scss';
 import Icons from '../Icons';
-// import welcomeImg from './welcome-img.png';
 import welcomeBg from './welcome-bg.png';
 
 const WelcomeSection = () => {

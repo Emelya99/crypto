@@ -1,5 +1,6 @@
 import Header from './components/Header';
 import WelcomeSection from './components/WelcomeSection';
+import About from './components/About';
 
 const App = () => {
   return (
@@ -7,7 +8,7 @@ const App = () => {
       <Header />
       <main>
         <WelcomeSection />
-        <div>footer</div>
+        <About />
       </main>
     </div>
   );
