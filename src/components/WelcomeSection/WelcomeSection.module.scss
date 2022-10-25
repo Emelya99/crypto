@@ -151,6 +151,16 @@
     }
 }
 
+@media(max-width:860px) {
+
+    .img {
+        top: 50%;
+        transform: translate(0px, -50%);
+        max-width: 404px;
+        max-height: 287px;
+    }
+}
+
 @media(max-width:767px) {
 
     .welcome {
@@ -159,10 +169,11 @@
     }
 
     .img {
-        max-width: 308px;
-        max-height: 250px;
+        max-width: 368px;
+        max-height: 275px;
+        transform: translate(0px, 0%);
         top: auto;
-        bottom: 0px;
+        bottom: 0;
     }
 
     .wrapper {
@@ -207,6 +218,11 @@
 }
 
 @media(max-width:425px) {
+
+    .img {
+        max-width: 308px;
+        max-height: 250px;
+    }
 
     .text {
         max-width: 246px;
