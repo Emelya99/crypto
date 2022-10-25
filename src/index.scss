@@ -2,5 +2,29 @@
 @import './fonts.scss';
 
 *{
-  font-family: 'Mazzard M', sans-serif;
+  font-family: 'Mazzard H', sans-serif;
+}
+
+body {
+  color: #FFFFFF;
+  background: #000;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+a {
+  font-size: 15px;
+  line-height: 18px;
+  color: #AAAAAA;
+
+  &:hover {
+    color: #7B93FF;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
