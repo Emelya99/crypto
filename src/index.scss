@@ -1,17 +1,13 @@
 @import './reset.scss';
 @import './fonts.scss';
 
-*{
-  font-family: 'Mazzard H', sans-serif;
-}
-
 body {
+  font-family: 'Mazzard H', sans-serif;
   color: #FFFFFF;
   background: #000;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  height: 5000px;
 }
 
 a {
@@ -32,7 +28,7 @@ li,
 p,
 span,
 div {
-  transition: all 0.3s ease-in;
+  transition: all 0.3s ease;
 }
 
 .container {

@@ -16,7 +16,7 @@ const Header = () => {
   }, []);
 
   React.useEffect(() => {
-    if (menu) {
+    if (menu && window.screen.width <= 766) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'visible';
