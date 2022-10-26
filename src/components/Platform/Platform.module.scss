@@ -1,5 +1,19 @@
 .platform {
     padding-bottom: 261px;
+    overflow: visible;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0px);
+        width: 497px;
+        height: 277px;
+        background: #949494;
+        opacity: 0.5;
+        filter: blur(275px);
+    }
 }
 
 .wrapper {

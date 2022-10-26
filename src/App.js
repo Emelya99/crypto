@@ -4,6 +4,7 @@ import WelcomeSection from './components/WelcomeSection';
 import About from './components/About';
 import Platform from './components/Platform';
 import Service from './components/Service';
+import Icons from './components/Icons';
 
 const App = () => {
   const welcomeRef = React.useRef();
@@ -14,7 +15,10 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="wrapper">
+      <div className="main-background">
+        <Icons name="bg" />
+      </div>
       <Header />
       <main>
         <WelcomeSection onClickScroll={onClickScroll} />
