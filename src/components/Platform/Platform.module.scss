@@ -2,9 +2,13 @@
     padding-bottom: 261px;
     overflow: visible;
 
-    &::after {
+    &::after,
+    &::before {
         content: '';
         position: absolute;
+    }
+
+    &::after {
         top: 50%;
         left: 50%;
         transform: translate(-50%, 0px);
@@ -13,6 +17,42 @@
         background: #949494;
         opacity: 0.5;
         filter: blur(275px);
+        z-index: -1;
+    }
+
+    &::before {
+        width: 265px;
+        height: 265px;
+        bottom: -104px;
+        left: -27px;
+        background: #666666;
+        filter: blur(250px);
+    }
+}
+
+.circles {
+
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        filter: blur(225px);
+        width: 253px;
+        height: 253px;
+        overflow: hidden;
+    }
+
+    &::after {
+        background: #64D0FF;
+        opacity: 0.8;
+        top: 34px;
+        right: 0px;
+    }
+
+    &::before {
+        background: #929292;
+        top: -16px;
+        right: 100px;
     }
 }
 

@@ -27,16 +27,6 @@ a {
   }
 }
 
-a,
-button,
-svg,
-li,
-p,
-span,
-div {
-  transition: all 0.3s ease;
-}
-
 .container {
   max-width: 1226px;
   padding: 0 28px;
@@ -71,7 +61,7 @@ section {
     height: 703.47px;
     background: linear-gradient(180deg, rgba(0, 65, 218, 0.115) 0%, rgba(40, 0, 153, 0.115) 91.72%);
     filter: blur(100px);
-    border-radius: 2.71815e+07px;
+    border-radius: 3px;
     transform: rotate(131.65deg);
 }
 
@@ -85,9 +75,9 @@ section {
     height: 703.47px;
     background: linear-gradient(180deg, rgba(0, 65, 218, 0.161) 0%, rgba(40, 0, 153, 0.161) 91.72%);
     filter: blur(100px);
-    border-radius: 2.71815e+07px;
+    border-radius: 3px;
     transform: rotate(131.65deg);
-}
+  }
 }
 
 .main-background {

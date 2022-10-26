@@ -3,7 +3,7 @@
     font-family: 'Mazzard M', sans-serif;
     position: relative;
     height: calc(100vh - 88px);
-    background-image: url('./welcome-img.png');
+    background-image: url('./welcome-img.svg');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: auto;
@@ -32,6 +32,14 @@
         background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.09) 0%, rgba(196, 196, 196, 0) 100%);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
       }
+
+    :global(.container) {
+        position: relative;
+    }
+
+    :global(.hide) {
+        display: none;
+    }
 }
 
 .wrapper {
@@ -42,8 +50,8 @@
 .img {
     position: absolute;
     z-index: -1;
-    top: 121px;
-    right: 0;
+    top: 20px;
+    right: -107px;
     max-width: 799px;
     max-height: 435px;
 }
@@ -190,17 +198,17 @@
     }
 
     .img {
-        top: 48px;
+        top: -20px;
+        right: 13px;
         max-width: 465px;
         max-height: 351px;
     }
 }
 
-@media(max-width:860px) {
+@media(max-width:900px) {
 
     .img {
-        top: 50%;
-        transform: translate(0px, -50%);
+        top: 11%;
         max-width: 404px;
         max-height: 287px;
     }
@@ -211,14 +219,17 @@
     .welcome {
         height: auto;
         padding: 60px 0 300px;
+
+        :global(.hide) {
+            display: inline-flex;
+        }
     }
 
     .img {
         max-width: 368px;
         max-height: 275px;
-        transform: translate(0px, 0%);
         top: auto;
-        bottom: 0;
+        bottom: -103%;
     }
 
     .wrapper {
@@ -237,6 +248,7 @@
         font-size: 52px;
         line-height: 61px;
         margin-bottom: 20px;
+        flex-direction: column;
 
         & span {
             display: inline-block;
@@ -262,6 +274,13 @@
     }
 }
 
+@media(max-width:600px) {
+
+    .img {
+        bottom: -84%;
+    }
+}
+
 @media(max-width:425px) {
 
     .img {
@@ -271,5 +290,12 @@
 
     .text {
         max-width: 246px;
+    }
+}
+
+@media(max-width:385px) {
+
+    .img {
+        bottom: -67%;
     }
 }

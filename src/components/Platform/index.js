@@ -11,7 +11,7 @@ const animationText = {
   visible: (custom) => ({
     y: 0,
     opacity: 1,
-    transition: { delay: custom * 0.2 },
+    transition: { delay: custom * 0.2, duration: 0.8 },
   }),
 };
 
@@ -23,7 +23,7 @@ const animationImg = {
   visible: {
     x: 0,
     opacity: 1,
-    transition: { delay: 2 },
+    transition: { delay: 2, duration: 0.8 },
   },
 };
 
@@ -34,6 +34,7 @@ const Platform = () => {
       whileInView="visible"
       viewport={{ amount: 0.2, once: true }}
       className={styles.platform}>
+      <div className={styles.circles}></div>
       <div className="container">
         <div className={styles.wrapper}>
           <motion.div variants={animationImg} className={styles.table}>

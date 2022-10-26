@@ -60,109 +60,64 @@ const Icons = ({ name }) => {
     case 'bg':
       return (
         <svg
-          width="1440"
-          height="2245"
-          viewBox="0 0 1440 2245"
+          width="1293"
+          height="1834"
+          viewBox="0 0 1293 1834"
           fill="none"
           xmlns="http://www.w3.org/2000/svg">
-          <g filter="url(#filter0_f_2_81)">
-            <ellipse cx="1263" cy="1082.5" rx="126" ry="126.5" fill="#929292" />
-          </g>
-          <g opacity="0.8" filter="url(#filter1_f_2_81)">
-            <circle cx="1322.5" cy="1144.5" r="126.5" fill="#64D0FF" />
-          </g>
-          <g filter="url(#filter2_f_2_81)">
-            <circle cx="105.5" cy="1612.5" r="132.5" fill="#666666" />
-          </g>
           <g opacity="0.3">
             <circle
-              cx="1063.5"
+              cx="916.5"
               cy="916.5"
               r="235.816"
-              stroke="url(#paint0_linear_2_81)"
+              stroke="url(#paint0_linear_2057_2)"
               strokeOpacity="0.7"
               strokeWidth="1.4"
             />
             <circle
-              cx="1063.5"
+              cx="916.5"
               cy="916.5"
               r="429.6"
-              stroke="url(#paint1_linear_2_81)"
+              stroke="url(#paint1_linear_2057_2)"
               strokeOpacity="0.7"
               strokeWidth="1.4"
             />
             <circle
-              cx="1063.5"
+              cx="916.5"
               cy="916.5"
               r="666.2"
-              stroke="url(#paint2_linear_2_81)"
+              stroke="url(#paint2_linear_2057_2)"
               strokeOpacity="0.7"
               strokeWidth="1.4"
             />
             <circle
-              cx="1063.5"
+              cx="916.5"
               cy="916.5"
               r="915.8"
-              stroke="url(#paint3_linear_2_81)"
+              stroke="url(#paint3_linear_2057_2)"
               strokeOpacity="0.7"
               strokeWidth="1.4"
             />
           </g>
-          <g opacity="0.6" filter="url(#filter3_f_2_81)">
-            <circle cx="531" cy="1662" r="4" fill="#A66AFF" />
+          <g opacity="0.6" filter="url(#filter0_f_2057_2)">
+            <circle cx="384" cy="1662" r="4" fill="#A66AFF" />
           </g>
-          <g opacity="0.6" filter="url(#filter4_f_2_81)">
-            <circle cx="417" cy="1079" r="4" fill="#6A8BFF" />
+          <g opacity="0.6" filter="url(#filter1_f_2057_2)">
+            <circle cx="270" cy="1079" r="4" fill="#6A8BFF" />
           </g>
-          <g opacity="0.6" filter="url(#filter5_f_2_81)">
-            <circle cx="1380" cy="1206" r="4" fill="#45B1FF" />
+          <g opacity="0.6" filter="url(#filter2_f_2057_2)">
+            <circle cx="1233" cy="1206" r="4" fill="#45B1FF" />
           </g>
-          <g opacity="0.6" filter="url(#filter6_f_2_81)">
-            <circle cx="919" cy="1103" r="4" fill="#755AD2" />
+          <g opacity="0.6" filter="url(#filter3_f_2057_2)">
+            <circle cx="772" cy="1103" r="4" fill="#755AD2" />
           </g>
-          <g opacity="0.2" filter="url(#filter7_f_2_81)">
-            <circle cx="1133" cy="1829" r="4" fill="#82D2FF" />
+          <g opacity="0.2" filter="url(#filter4_f_2057_2)">
+            <circle cx="986" cy="1829" r="4" fill="#82D2FF" />
           </g>
           <defs>
             <filter
-              id="filter0_f_2_81"
-              x="687"
-              y="506"
-              width="1152"
-              height="1153"
-              filterUnits="userSpaceOnUse"
-              colorInterpolationFilters="sRGB">
-              <feFlood floodOpacity="0" result="BackgroundImageFix" />
-              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-              <feGaussianBlur stdDeviation="225" result="effect1_foregroundBlur_2_81" />
-            </filter>
-            <filter
-              id="filter1_f_2_81"
-              x="746"
-              y="568"
-              width="1153"
-              height="1153"
-              filterUnits="userSpaceOnUse"
-              colorInterpolationFilters="sRGB">
-              <feFlood floodOpacity="0" result="BackgroundImageFix" />
-              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-              <feGaussianBlur stdDeviation="225" result="effect1_foregroundBlur_2_81" />
-            </filter>
-            <filter
-              id="filter2_f_2_81"
-              x="-527"
-              y="980"
-              width="1265"
-              height="1265"
-              filterUnits="userSpaceOnUse"
-              colorInterpolationFilters="sRGB">
-              <feFlood floodOpacity="0" result="BackgroundImageFix" />
-              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-              <feGaussianBlur stdDeviation="250" result="effect1_foregroundBlur_2_81" />
-            </filter>
-            <filter
-              id="filter3_f_2_81"
-              x="526"
+              id="filter0_f_2057_2"
+              x="379"
               y="1657"
               width="10"
               height="10"
@@ -170,11 +125,11 @@ const Icons = ({ name }) => {
               colorInterpolationFilters="sRGB">
               <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-              <feGaussianBlur stdDeviation="0.5" result="effect1_foregroundBlur_2_81" />
+              <feGaussianBlur stdDeviation="0.5" result="effect1_foregroundBlur_2057_2" />
             </filter>
             <filter
-              id="filter4_f_2_81"
-              x="412"
+              id="filter1_f_2057_2"
+              x="265"
               y="1074"
               width="10"
               height="10"
@@ -182,11 +137,11 @@ const Icons = ({ name }) => {
               colorInterpolationFilters="sRGB">
               <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-              <feGaussianBlur stdDeviation="0.5" result="effect1_foregroundBlur_2_81" />
+              <feGaussianBlur stdDeviation="0.5" result="effect1_foregroundBlur_2057_2" />
             </filter>
             <filter
-              id="filter5_f_2_81"
-              x="1375"
+              id="filter2_f_2057_2"
+              x="1228"
               y="1201"
               width="10"
               height="10"
@@ -194,11 +149,11 @@ const Icons = ({ name }) => {
               colorInterpolationFilters="sRGB">
               <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-              <feGaussianBlur stdDeviation="0.5" result="effect1_foregroundBlur_2_81" />
+              <feGaussianBlur stdDeviation="0.5" result="effect1_foregroundBlur_2057_2" />
             </filter>
             <filter
-              id="filter6_f_2_81"
-              x="914"
+              id="filter3_f_2057_2"
+              x="767"
               y="1098"
               width="10"
               height="10"
@@ -206,11 +161,11 @@ const Icons = ({ name }) => {
               colorInterpolationFilters="sRGB">
               <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-              <feGaussianBlur stdDeviation="0.5" result="effect1_foregroundBlur_2_81" />
+              <feGaussianBlur stdDeviation="0.5" result="effect1_foregroundBlur_2057_2" />
             </filter>
             <filter
-              id="filter7_f_2_81"
-              x="1128"
+              id="filter4_f_2057_2"
+              x="981"
               y="1824"
               width="10"
               height="10"
@@ -218,13 +173,13 @@ const Icons = ({ name }) => {
               colorInterpolationFilters="sRGB">
               <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-              <feGaussianBlur stdDeviation="0.5" result="effect1_foregroundBlur_2_81" />
+              <feGaussianBlur stdDeviation="0.5" result="effect1_foregroundBlur_2057_2" />
             </filter>
             <linearGradient
-              id="paint0_linear_2_81"
-              x1="826.984"
+              id="paint0_linear_2057_2"
+              x1="679.984"
               y1="679.984"
-              x2="1310.17"
+              x2="1163.17"
               y2="690.589"
               gradientUnits="userSpaceOnUse">
               <stop stopColor="#91E4FF" stopOpacity="0.6" />
@@ -233,10 +188,10 @@ const Icons = ({ name }) => {
               <stop offset="0.9375" stopColor="#9D71FB" stopOpacity="0.71" />
             </linearGradient>
             <linearGradient
-              id="paint1_linear_2_81"
-              x1="1157"
+              id="paint1_linear_2057_2"
+              x1="1010"
               y1="486"
-              x2="1421.11"
+              x2="1274.11"
               y2="1094.24"
               gradientUnits="userSpaceOnUse">
               <stop stopColor="#91E4FF" stopOpacity="0.6" />
@@ -245,10 +200,10 @@ const Icons = ({ name }) => {
               <stop offset="0.9375" stopColor="#9D71FB" stopOpacity="0.71" />
             </linearGradient>
             <linearGradient
-              id="paint2_linear_2_81"
-              x1="1089.5"
+              id="paint2_linear_2057_2"
+              x1="942.5"
               y1="212.001"
-              x2="1539.84"
+              x2="1392.84"
               y2="1042.51"
               gradientUnits="userSpaceOnUse">
               <stop stopColor="#91E4FF" stopOpacity="0.6" />
@@ -257,10 +212,10 @@ const Icons = ({ name }) => {
               <stop offset="0.9375" stopColor="#9D71FB" stopOpacity="0.71" />
             </linearGradient>
             <linearGradient
-              id="paint3_linear_2_81"
-              x1="1036"
+              id="paint3_linear_2057_2"
+              x1="888.999"
               y1="0.000290146"
-              x2="1591.77"
+              x2="1444.77"
               y2="1090.1"
               gradientUnits="userSpaceOnUse">
               <stop stopColor="#91E4FF" stopOpacity="0.6" />

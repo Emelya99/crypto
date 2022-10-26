@@ -8,6 +8,19 @@ import Icons from './components/Icons';
 
 const App = () => {
   const welcomeRef = React.useRef();
+  const [windowHeight, setWindowHeight] = React.useState(window.innerHeight);
+
+  const handleResize = () => {
+    setWindowHeight(window.innerHeight);
+  };
+
+  React.useEffect(() => {
+    window.addEventListener('resize', handleResize, false);
+
+    return () => {
+      window.removeEventListener('resize', handleResize, false);
+    };
+  }, []);
 
   const onClickScroll = (e) => {
     e.preventDefault();
@@ -21,7 +34,7 @@ const App = () => {
       </div>
       <Header />
       <main>
-        <WelcomeSection onClickScroll={onClickScroll} />
+        <WelcomeSection onClickScroll={onClickScroll} windowHeight={windowHeight} />
         <About welcomeRef={welcomeRef} />
         <Platform />
         <Service />

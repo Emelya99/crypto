@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './About.module.scss';
-import chart from './chart.png';
+import chart from './chart.svg';
 import { motion } from 'framer-motion';
 
 const animationText = {
@@ -11,7 +11,7 @@ const animationText = {
   visible: (custom) => ({
     y: 0,
     opacity: 1,
-    transition: { delay: custom * 0.2 },
+    transition: { delay: custom * 0.2, duration: 0.8 },
   }),
 };
 
@@ -23,7 +23,7 @@ const animationImg = {
   visible: {
     x: 0,
     opacity: 1,
-    transition: { delay: 2 },
+    transition: { delay: 2, duration: 0.8 },
   },
 };
 
