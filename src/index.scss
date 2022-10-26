@@ -61,28 +61,33 @@ section {
   overflow: hidden;
   position: relative;
 
-  &::before {
+  &::before{
     content: '';
-    z-index: 0;
     position: absolute;
-    width: 742px;
-    height: 597px;
-    left: -224px;
-    top: -158px;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.09) 0%, rgba(196, 196, 196, 0) 100%);
-  }
+    z-index: 0;
+    top: 23%;
+    right: -45%;
+    width: 1185.68px;
+    height: 703.47px;
+    background: linear-gradient(180deg, rgba(0, 65, 218, 0.115) 0%, rgba(40, 0, 153, 0.115) 91.72%);
+    filter: blur(100px);
+    border-radius: 2.71815e+07px;
+    transform: rotate(131.65deg);
+}
 
-  &::after {
+&::after {
     content: '';
-    z-index: 0;
     position: absolute;
-    width: 742px;
-    height: 597px;
-    right: -200px;
-    top: 57px;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.09) 0%, rgba(196, 196, 196, 0) 100%);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  }
+    z-index: 0;
+    top: 56%;
+    left: -40%;
+    width: 1185.68px;
+    height: 703.47px;
+    background: linear-gradient(180deg, rgba(0, 65, 218, 0.161) 0%, rgba(40, 0, 153, 0.161) 91.72%);
+    filter: blur(100px);
+    border-radius: 2.71815e+07px;
+    transform: rotate(131.65deg);
+}
 }
 
 .main-background {

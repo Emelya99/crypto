@@ -1,5 +1,16 @@
 import React from 'react';
 import styles from './Service.module.scss';
+import { motion } from 'framer-motion';
+
+const animationItem = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    opacity: 1,
+    transition: { delay: custom * 0.3 },
+  }),
+};
 
 const items = [
   {
@@ -38,12 +49,20 @@ const items = [
 
 const Service = () => {
   return (
-    <section className={styles.service}>
+    <motion.section
+      viewport={{ amount: 0.2, once: true }}
+      initial="hidden"
+      whileInView="visible"
+      className={styles.service}>
       <div className="container">
         <div className={styles.wrapper}>
           {items.map((item) => {
             return (
-              <div className={styles.item} key={item.id}>
+              <motion.div
+                variants={animationItem}
+                custom={item.id}
+                className={styles.item}
+                key={item.id}>
                 <div className={styles.box}>
                   <p className={styles.subtitle}>{item.subtitle}</p>
                   <h3 className={styles.title}>
@@ -53,12 +72,12 @@ const Service = () => {
                     {item.link}
                   </a>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

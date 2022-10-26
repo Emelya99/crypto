@@ -8,6 +8,30 @@
     background-position: top center;
     background-size: auto;
     text-align: center;
+    overflow: visible;
+
+    &::before {
+        content: '';
+        z-index: 0;
+        position: absolute;
+        width: 742px;
+        height: 597px;
+        left: -224px;
+        top: -246px;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.09) 0%, rgba(196, 196, 196, 0) 100%);
+      }
+    
+      &::after {
+        content: '';
+        z-index: 0;
+        position: absolute;
+        width: 742px;
+        height: 597px;
+        right: -200px;
+        top: 57px;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.09) 0%, rgba(196, 196, 196, 0) 100%);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      }
 }
 
 .wrapper {

@@ -1,36 +1,72 @@
 import React from 'react';
 import styles from './About.module.scss';
 import chart from './chart.png';
+import { motion } from 'framer-motion';
+
+const animationText = {
+  hidden: {
+    y: 70,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.2 },
+  }),
+};
+
+const animationImg = {
+  hidden: {
+    x: -150,
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: { delay: 2 },
+  },
+};
 
 const About = ({ welcomeRef }) => {
   return (
-    <section className={styles.about} ref={welcomeRef}>
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.2, once: true }}
+      className={styles.about}
+      ref={welcomeRef}>
       <div className="container">
-        <p className={styles.subtitle}>about us</p>
-        <h2>Global technologies</h2>
+        <motion.p custom={1} variants={animationText} className={styles.subtitle}>
+          about us
+        </motion.p>
+        <motion.h2 custom={1} variants={animationText}>
+          Global technologies
+        </motion.h2>
         <div className={styles.wrapper}>
-          <div className={styles.imgBox}>
+          <motion.div variants={animationImg} className={styles.imgBox}>
             <img src={chart} alt="chart" />
-          </div>
+          </motion.div>
           <div className={styles.content}>
-            <h3 className={styles.title}>Level 1</h3>
+            <motion.h3 custom={5} variants={animationText} className={styles.title}>
+              Level 1
+            </motion.h3>
             <ul className={styles.list}>
-              <li>
+              <motion.li custom={7} variants={animationText}>
                 Deploy a multi-legged futures strategy by simultaneously placing orders to buy and
                 sell from the same order ticket.
-              </li>
-              <li>
+              </motion.li>
+              <motion.li custom={9} variants={animationText}>
                 Place and manage orders based on the Level 2 order book, which provides a live
                 display of all bids and offers waiting to be executed.
-              </li>
+              </motion.li>
             </ul>
-            <a className={styles.btn} href="/#">
+            <motion.a custom={11} variants={animationText} className={styles.btn} href="/#">
               Start Now
-            </a>
+            </motion.a>
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
