@@ -1,4 +1,5 @@
 .service {
+    padding-top: 60px;
     padding-bottom: 162px;
 
     &::after {
@@ -156,6 +157,7 @@
     font-family: 'Mazzard H', sans-serif;
     color: #AAAAAA;
     width: fit-content;
+    transition: color .3s ease;
 
     &:hover {
         color: #FFF;

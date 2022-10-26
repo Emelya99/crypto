@@ -60,6 +60,13 @@ const Service = () => {
             return (
               <motion.div
                 variants={animationItem}
+                whileHover={{
+                  scale: [1, 1.1, 0.9],
+                  rotate: [0, 10, -10, 0],
+                  transition: {
+                    duration: 0.5,
+                  },
+                }}
                 custom={item.id}
                 className={styles.item}
                 key={item.id}>

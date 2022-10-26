@@ -139,19 +139,6 @@
     color: #FFFFFF;
     padding: 18px 22px 17px 30px;
 
-    &:hover {
-        background: linear-gradient(140.6deg, #FFFFFF -27.18%, #DEDEDE 126.06%);
-        color: #000;
-
-        & span {
-            background: #000;
-
-            & svg {
-                fill: #FFF;
-            }
-        }
-    }
-
     & span {
         margin-left: 34px;
         width: 34px;

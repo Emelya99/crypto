@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Header.module.scss';
 import Icons from '../Icons';
+import { motion } from 'framer-motion';
 
 const Header = () => {
   const [menu, setMenu] = React.useState(false);
@@ -42,10 +43,14 @@ const Header = () => {
                 </li>
               </ul>
             </nav>
-            <a className={styles.btn} href="/#">
+            <motion.a
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+              className={styles.btn}
+              href="/#">
               <span>Career</span>
               <Icons name="arrow-right-up" />
-            </a>
+            </motion.a>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 .platform {
-    padding-bottom: 261px;
+    padding-bottom: 201px;
     overflow: visible;
 
     &::after,
@@ -9,7 +9,7 @@
     }
 
     &::after {
-        top: 50%;
+        top: 39%;
         left: 50%;
         transform: translate(-50%, 0px);
         width: 497px;
@@ -39,7 +39,6 @@
         filter: blur(225px);
         width: 253px;
         height: 253px;
-        overflow: hidden;
     }
 
     &::after {
@@ -274,6 +273,7 @@
     color: #7B93FF;
     letter-spacing: 0.01em;
     line-height: 22px;
+    transition: color .3s ease;
 
     &:hover {
         color: #FFF;
@@ -327,7 +327,7 @@
 @media(max-width:1024px) {
 
     .platform {
-        padding-bottom: 160px;
+        padding-bottom: 100px;
     }
 
     .wrapper {
@@ -470,7 +470,7 @@
 @media(max-width:767px) {
 
     .platform {
-        padding-bottom: 174px;
+        padding-bottom: 114px;
     }
 
     .wrapper {

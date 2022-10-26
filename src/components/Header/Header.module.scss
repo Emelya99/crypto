@@ -34,6 +34,7 @@
         font-size: 18px;
         line-height: 21px;
         color: #F3F3F3;
+        transition: color .3s ease;
 
         &:hover {
             color: #7B93FF;
@@ -49,18 +50,6 @@
     box-shadow: 0px 0px 49px rgba(42, 7, 254, 0.4);
     border-radius: 10px;
     padding: 19px 35px 17px 43px;
-
-    &:hover {
-        background: linear-gradient(140.6deg, #3E6FF9 -27.18%, #3E53F8 126.06%);
-
-        span {
-            color: #FFF;
-        }
-
-        svg {
-            fill: #FFF;
-        }
-    }
 
     span {
         font-family: 'Mazzard M', sans-serif;

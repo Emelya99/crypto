@@ -60,7 +60,13 @@ const About = ({ welcomeRef }) => {
                 display of all bids and offers waiting to be executed.
               </motion.li>
             </ul>
-            <motion.a custom={11} variants={animationText} className={styles.btn} href="/#">
+            <motion.a
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+              custom={11}
+              variants={animationText}
+              className={styles.btn}
+              href="/#">
               Start Now
             </motion.a>
           </div>

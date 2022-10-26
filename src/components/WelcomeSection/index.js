@@ -55,6 +55,8 @@ const WelcomeSection = ({ onClickScroll, windowHeight }) => {
           </motion.p>
         </div>
         <motion.a
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: 'spring', stiffness: 400, damping: 10 }}
           custom={7}
           variants={animationText}
           className={`${styles.btn} ${windowHeight < 840 ? 'hide' : ''}`}
