@@ -3,7 +3,7 @@ import styles from './WelcomeSection.module.scss';
 import Icons from '../Icons';
 import welcomeBg from './welcome-bg.png';
 
-const WelcomeSection = () => {
+const WelcomeSection = ({ onClickScroll }) => {
   return (
     <section className={styles.welcome}>
       <div className="container">
@@ -17,7 +17,7 @@ const WelcomeSection = () => {
             Advanced crypto algorithmic trading and efficient cross-chain execution, at scale.
           </p>
         </div>
-        <a className={styles.btn} href="/#">
+        <a className={styles.btn} href="/#" onClick={onClickScroll}>
           Learn More
           <span>
             <Icons name="arrow-down" />
@@ -25,7 +25,7 @@ const WelcomeSection = () => {
         </a>
       </div>
       <img src={welcomeBg} className={styles.img} alt="welcome-bg" />
-      <div className={styles.scroll}>
+      <div className={styles.scroll} onClick={onClickScroll}>
         <Icons name="scroll" />
       </div>
     </section>

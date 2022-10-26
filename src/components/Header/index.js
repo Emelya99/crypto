@@ -3,17 +3,11 @@ import styles from './Header.module.scss';
 import Icons from '../Icons';
 
 const Header = () => {
-  const [menu, setMenu] = React.useState(true);
+  const [menu, setMenu] = React.useState(false);
 
   const onClickBurger = () => {
     setMenu(!menu);
   };
-
-  React.useEffect(() => {
-    if (window.screen.width <= 766) {
-      setMenu(false);
-    }
-  }, []);
 
   React.useEffect(() => {
     if (menu && window.screen.width <= 766) {
@@ -31,30 +25,28 @@ const Header = () => {
             <Icons name="logo" />
           </a>
           <div className={styles.burger} onClick={onClickBurger}></div>
-          {menu && (
-            <div className={styles.content}>
-              <nav>
-                <ul className={styles.menu}>
-                  <li>
-                    <a href="/#">Activities</a>
-                  </li>
-                  <li>
-                    <a href="/#">Technology</a>
-                  </li>
-                  <li>
-                    <a href="/#">R&D</a>
-                  </li>
-                  <li>
-                    <a href="/#">Community</a>
-                  </li>
-                </ul>
-              </nav>
-              <a className={styles.btn} href="/#">
-                <span>Career</span>
-                <Icons name="arrow-right-up" />
-              </a>
-            </div>
-          )}
+          <div className={`${styles.content} ${menu ? 'visible' : ''}`}>
+            <nav>
+              <ul className={styles.menu}>
+                <li>
+                  <a href="/#">Activities</a>
+                </li>
+                <li>
+                  <a href="/#">Technology</a>
+                </li>
+                <li>
+                  <a href="/#">R&D</a>
+                </li>
+                <li>
+                  <a href="/#">Community</a>
+                </li>
+              </ul>
+            </nav>
+            <a className={styles.btn} href="/#">
+              <span>Career</span>
+              <Icons name="arrow-right-up" />
+            </a>
+          </div>
         </div>
       </div>
     </header>

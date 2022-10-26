@@ -124,10 +124,12 @@
     }
 
     .content {
+        opacity: 0;
+        z-index: -1;
+        transition: opacity .5s ease-in-out;
         position: fixed;
         background: #000;
         display: block;
-        z-index: 10;
         top: 0;
         left: 0;
         width: 100%;
@@ -147,5 +149,11 @@
             font-size: 20px;
             line-height: 30px;
         }
+    }
+
+    :global(.visible) {
+        z-index: 10;
+        opacity: 1;
+        transition: opacity .5s ease-in-out;
     }
 }

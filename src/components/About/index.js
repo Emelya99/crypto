@@ -2,9 +2,9 @@ import React from 'react';
 import styles from './About.module.scss';
 import chart from './chart.png';
 
-const About = () => {
+const About = ({ welcomeRef }) => {
   return (
-    <section className={styles.about}>
+    <section className={styles.about} ref={welcomeRef}>
       <div className="container">
         <p className={styles.subtitle}>about us</p>
         <h2>Global technologies</h2>
