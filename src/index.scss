@@ -12,7 +12,7 @@ body {
 
 main {
   position: relative;
-    z-index: 1;
+  z-index: 1;
 }
 
 a {
@@ -64,7 +64,7 @@ section {
   &::before{
     content: '';
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     top: 23%;
     right: -45%;
     width: 1185.68px;
@@ -78,7 +78,7 @@ section {
 &::after {
     content: '';
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     top: 56%;
     left: -40%;
     width: 1185.68px;

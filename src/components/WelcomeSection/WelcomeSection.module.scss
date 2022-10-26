@@ -12,7 +12,7 @@
 
     &::before {
         content: '';
-        z-index: 0;
+        z-index: -1;
         position: absolute;
         width: 742px;
         height: 597px;
@@ -23,7 +23,7 @@
     
       &::after {
         content: '';
-        z-index: 0;
+        z-index: -1;
         position: absolute;
         width: 742px;
         height: 597px;
