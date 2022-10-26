@@ -3,6 +3,7 @@ import Header from './components/Header';
 import WelcomeSection from './components/WelcomeSection';
 import About from './components/About';
 import Platform from './components/Platform';
+import Service from './components/Service';
 
 const App = () => {
   const welcomeRef = React.useRef();
@@ -19,6 +20,7 @@ const App = () => {
         <WelcomeSection onClickScroll={onClickScroll} />
         <About welcomeRef={welcomeRef} />
         <Platform />
+        <Service />
       </main>
     </div>
   );
