@@ -12,8 +12,8 @@
         top: 39%;
         left: 50%;
         transform: translate(-50%, 0px);
-        width: 497px;
-        height: 277px;
+        width: 270px;
+        height: 236px;
         background: #949494;
         opacity: 0.5;
         filter: blur(275px);
@@ -21,12 +21,12 @@
     }
 
     &::before {
-        width: 265px;
-        height: 265px;
+        width: 150px;
+        height: 150px;
         bottom: -104px;
         left: -27px;
         background: #666666;
-        filter: blur(250px);
+        filter: blur(225px);
     }
 }
 
@@ -37,21 +37,21 @@
         content: '';
         position: absolute;
         filter: blur(225px);
-        width: 253px;
-        height: 253px;
+        width: 146px;
+        height: 150px;
     }
 
     &::after {
         background: #64D0FF;
         opacity: 0.8;
-        top: 34px;
-        right: 0px;
+        top: 75px;
+        right: 58px;
     }
 
     &::before {
         background: #929292;
-        top: -16px;
-        right: 100px;
+        top: -49px;
+        right: 183px;
     }
 }
 
